@@ -2,9 +2,12 @@
 int main()
 {
     for( int i=0; i<5; i++){
-        printf("¹q¸£±q0¶}©l¼Æ, i:%d\n", i );
+        printf("é›»è…¦å¾0é–‹å§‹æ•¸, i:%d\n", i );
     }
     for( int i=1; i<=5; i++){
-        printf("¤HÃş±q1¶}©l¼Æ, i:%d\n", i );
+        printf("äººé¡å¾1é–‹å§‹æ•¸å¤šä¸€é»é», i:%d\n", i );
+    }
+    for( int i=5; i>0; i--){
+        printf("å€’éä¾†æ•¸çš„è¿´åœˆ, i:%d\n", i);
     }
 }
