@@ -95,7 +95,7 @@ int main()
 
 #  Week 07
 
-##step01-1 long long int
+##  step01-1 long long int
 ```cpp
 #include <stdio.h>
 int main()
@@ -108,7 +108,7 @@ int main()
 }
 ```
 
-##step01-2 最大公因數 用%lld
+##  step01-2 最大公因數 用%lld
 ```cpp
 #include <stdio.h>
 int main()
@@ -125,7 +125,7 @@ int main()
 }
 ```
 
-##strp01-3 輾轉相除法 用 long long int\
+##  strp01-3 輾轉相除法 用 long long int\
 ```cpp
 #include <stdio.h>
 int main()
@@ -144,7 +144,7 @@ int main()
 }
 ```
 
-##step01-4 剝皮法 用while迴圈來剝皮的程式,把每一位數取出來
+##  step01-4 剝皮法 用while迴圈來剝皮的程式,把每一位數取出來
 ```cpp
 #include <stdio.h>
 int main()
