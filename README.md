@@ -93,7 +93,7 @@ int main()
 }
 ```
 
-#week 07
+#Week 07
 
 ##step01-1 long long int
 ```cpp
