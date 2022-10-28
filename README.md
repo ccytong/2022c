@@ -159,3 +159,84 @@ int main()
 }
 ```
 
+#  Week04
+
+##  step01-1 只有2個for迴圈畫出直角三角形 (口訣是先能畫出正方形。再來的關鍵, 是空格有幾個。空格有n-i個)
+```cpp
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+
+	for(int i=1; i<=n; i++){
+		for(int k=1; k<=n; k++){
+			if (k<=n-i) printf(" ");
+			else printf("*");
+		}
+		printf("\n");
+	}
+}
+```
+
+##  step01-2 使用2個while迴圈, 去寫出有空格、有星星的直角三角形 (用2個for(int i=1;i<=n; i++){...} 改成 while迴圈的版本)
+```cpp
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	
+	int i=1;
+	while(i<=n){
+		int k=1;
+		while(k<=n){
+			if( k<=n-i ) printf(" ");
+			else printf("*");
+			k++;
+		}
+		printf("\n");
+		i++;
+	}
+}
+```
+
+##  step01-3 質數判別 (利用 int bad=0; 一開始還沒有還掉, 迴圈裡發現壞掉時 bad=1; 迴圈後面檢查 if(bad==0)就是質數)
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("要判斷你輸入的數字是不是很孤獨的質數:");
+    int n;
+    scanf("%d", &n);
+
+    int bad=0;
+    for(int i=2; i<n; i++){
+        if(n%i==0) bad=1;
+    }
+    if(bad==0) printf("%d 是質數(沒有壞掉)",n);
+    else printf("%d 不是質數(早就壞掉了)",n);
+}
+```
+
+##  step01-4 質數判斷 (用for迴圈列出一堆數,再逐一進行「質數判斷」)
+```cpp
+
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d", &a);
+	
+	for(int n=2; n<=a; n++){
+	
+		int bad=0;
+		for(int i=2; i<n; i++){
+			if(n%i==0) bad=1;
+		}
+		if(bad==0) printf("%d ",n);
+	}
+}
+```
+
+
